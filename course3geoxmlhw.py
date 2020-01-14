@@ -15,7 +15,7 @@ mynum = input('Enter url number: ')
 # Make url
 url = serviceurl + mynum + ".xml"
 
-
+# retrieve page and result
 print('Retrieving', url)
 uh = urllib.request.urlopen(url, context=ctx)
 data = uh.read()
